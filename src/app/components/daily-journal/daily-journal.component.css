@@ -1,0 +1,149 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    /* align-content: center; */
+    justify-content: center;
+    margin: 50px;
+
+}
+
+.journal-entry {
+    padding: 20px;
+    border: 1px solid #2196F3; 
+    border-radius: 10px;
+    background-color: #0697ff; 
+    align-items: center;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+h1 {
+    font-size: 2em;
+    color: #005ebb;
+}
+
+.time {
+    font-size: 1.2em;
+    color: #2196F3;
+    margin-top: 10px;
+    margin-bottom:20px;
+}
+
+.journal-entry {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    /* width: 100%; */
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+.entry-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+h2 {
+    font-size: 1.5em;
+    color: #005ebb;
+ 
+}
+
+.add-button {
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 1.5em;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.add-button:hover {
+    background-color: #1976D2;
+}
+
+.entry-content{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.entry-content p {
+    font-size: 1.2em;
+    color: #2196F3;
+    margin: 5px 0;
+}
+
+.entry-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.entry-content li {
+    font-size: 1.2em;
+    color: #2196F3;
+    margin: 5px 0;
+}
+
+.icon {
+    margin-right: 10px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .time {
+        font-size: 1em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    .entry-content p, .entry-content li {
+        font-size: 1em;
+    }
+}
+
+/* iPhone specific styles */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.2em;
+    }
+
+    .time {
+        font-size: 0.9em;
+    }
+
+    h2 {
+        font-size: 1em;
+    }
+
+    .entry-content p, .entry-content li {
+        font-size: 0.9em;
+    }
+}

@@ -1,0 +1,204 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    /* justify-content: center; */
+    margin: 50px;
+    min-height: 95vh;
+}
+
+.background {
+    padding: 20px;
+    border: 1px solid #2196F3; 
+    border-radius: 10px;
+    background-color: #E3F2FD; 
+    align-items: center;
+    margin: 0px;
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.journal h1{
+    font-size: 2em;
+    color: #005ebb;
+}
+
+
+.heading h1{
+    font-size: 2em;
+    margin-bottom: 0.5em;
+    color: #005ebb;
+}
+
+.detector-div h1{
+    font-size: 1.5em;
+    /* margin: 0em; */
+    margin-bottom: 50px;
+    color: #ffffff;
+}
+
+
+
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    color: #2196F3;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+button {
+    background-color: #2196F3; 
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+.options button {
+    margin:20px 10px
+}
+
+button:hover {
+    background-color: #1976D2; 
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 1em;
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+textarea:focus {
+    border-color: #2196F3; 
+    outline: none;
+}
+
+.emotion-detector, .mind-score {
+    margin-top: 2em;
+    color: #2196F3; 
+}
+
+.section {
+    display: flex;
+    padding: 20px;
+    border: 1px solid #2196F3; 
+    border-radius: 10px;
+    background-color: #E3F2FD; 
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.textform {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.showdetector-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.detector-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    margin: 50px 30px;
+    padding:0px 20px;
+    background-color: #1976D2; 
+    border-radius: 20px;
+    color: #ffffff;
+}
+
+.emotion-detector{
+    display: flex;
+    align-items:center ;
+}
+
+.mind-score{
+    display: flex;
+    align-items:center ;
+}
+
+.journal-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #2196F3; 
+    border-radius: 10px;
+    background-color: #E3F2FD; 
+    align-items: center;
+    margin: 0px;
+}
+/* Responsive */
+@media (max-width: 768px) {
+
+    
+.heading h1,.journal h1 {
+    font-size: 1.5em;
+}
+
+.detector-div h1 {
+        font-size: 1em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    button {
+        padding: 8px 16px;
+        font-size: 0.9em;
+    }
+
+    textarea {
+        height: 80px;
+        font-size: 0.9em;
+    }
+}
+
+/* iPhone specific styles */
+@media (max-width: 480px) {
+       
+.heading h1 ,.journal h1 {
+    font-size: 1.5em;
+}
+
+.detector-div h1 {
+        font-size: 1em;
+    }
+
+    button {
+        padding: 6px 12px;
+        font-size: 0.8em;
+    }
+
+    textarea {
+        height: 60px;
+        font-size: 0.8em;
+    }
+}

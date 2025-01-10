@@ -1,0 +1,23 @@
+<div class="container background">
+  <h1 style="text-align: center;">Daily Journal</h1>
+  <div class="header">
+ <div></div>
+    <button class="add-button" (click)="addJournalEntry()">+</button>
+  </div>
+  <div class="journal-entry">
+    <h2>{{ entryType }}</h2>
+    <div class="entry-header">
+    <div></div>
+      <div class="time">{{ currentTime }}</div>
+     
+    </div>
+    <div class="entry-content">
+      <p><span class="icon">😊</span> Mood: {{ mood }}</p>
+      <p><span class="icon">🧠</span> Mind Score: {{ mindScore }}</p>
+      <p><span class="icon">🌟</span> Positive Highlights:</p>
+      <ul>
+        <li *ngFor="let highlight of positiveHighlights">{{ highlight }}</li>
+      </ul>
+      </div>
+  </div>
+</div>

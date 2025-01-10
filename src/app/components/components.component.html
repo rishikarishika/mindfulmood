@@ -1,0 +1,48 @@
+
+<div class="container ">
+<section class="heading">
+    
+<h1>MOODMINDFUL</h1>
+
+<h2>Hi, How are you? feeling well..</h2>
+
+</section>
+<section>
+  <div class="options" *ngIf="!showScanner && !showForm">
+    <button (click)="selectOption('scanFace')">Analyze Face for Emotions</button>
+    <button (click)="selectOption('fillForm')">Write Down How You Are Feeling</button>
+  </div>
+
+  <div *ngIf="showScanner">
+  
+    <p>Face Scanner Component</p>
+    <button (click)="submitScan()">Submit</button>
+  </div>
+
+  <div class="textform" *ngIf="showForm">
+    <textarea [(ngModel)]="feelingText" placeholder="Write down how you are feeling..."></textarea>
+    <button (click)="submitForm()">Submit</button>
+  </div>
+
+</section>
+<section>
+    <div class="showdetector-div" *ngIf="showResults">
+        <div class="detector-div" (click)="navigateToEmotionComponent()">
+            <div class="emotion-detector">
+                <h1>Emotion Detector</h1>
+            </div>
+        </div>
+        <div class="detector-div">
+            <div class="mind-score">
+                <h1>Mind Score</h1>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="journal-section">
+    <div class="journal"  (click)="navigateToJournalComponent()">
+        <h1>Daily Journal</h1>
+    </div>
+</section>
+</div>
